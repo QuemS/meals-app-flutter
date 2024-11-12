@@ -10,7 +10,7 @@ class FiltersScreen extends StatefulWidget {
 }
 
 class _FiltersScreen extends State<FiltersScreen> {
-  var _gluterFreeFilterSet = false;
+  var _glutenFreeFilterSet = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,10 +20,10 @@ class _FiltersScreen extends State<FiltersScreen> {
       body: Column(
         children: [
           SwitchListTile(
-            value: _gluterFreeFilterSet,
+            value: _glutenFreeFilterSet,
             onChanged: (isChecked) {
               setState(() {
-                _gluterFreeFilterSet = isChecked;
+                _glutenFreeFilterSet = isChecked;
               });
             },
             title: Text(
